@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import styles from "./Hero.module.css";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
-
+import photo from "../assets/ankita.JPG"
 
 export default function Hero() {
   return (
@@ -76,7 +76,7 @@ to innovative tech projects.
 
             {/* Replace src with your own photo in /public */}
             <img
-              src="/src/assets/ankita.JPG"
+              src={photo}
               alt="Your portrait"
               className={styles.portraitImg}
             />
