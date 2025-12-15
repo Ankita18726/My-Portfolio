@@ -1,0 +1,37 @@
+/* src/global.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #020617;
+  --accent: #f97316;
+  --accent-soft: #a855f7;
+  --accent-soft-2: #22d3ee;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  background:
+    radial-gradient(circle at 0% 0%, #1d1b49 0, transparent 55%),
+    radial-gradient(circle at 100% 0%, #7c2d12 0, transparent 55%),
+    radial-gradient(circle at 0% 100%, #0f766e 0, transparent 55%),
+    radial-gradient(circle at 100% 100%, #4c1d95 0, transparent 55%),
+    radial-gradient(circle at 50% 20%, #1e293b 0, #020617 55%);
+  background-attachment: fixed;
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+main {
+  padding-top: 4.5rem;
+}
